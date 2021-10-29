@@ -23,4 +23,3 @@ resource "azurerm_subnet" "this" {
   service_endpoint_policy_ids = var.service_endpoint_policy_ids
   virtual_network_name        = var.virtual_network_name
 }
-
