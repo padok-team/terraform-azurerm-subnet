@@ -2,6 +2,24 @@
 
 Terraform module which creates **subnet** resources on **Azurerm**.
 
+## User Stories for this module
+
+- AAPOS I can create a subnet in a virtual network.
+
+## Usage
+
+```hcl
+module "azurerm_subnet" {
+  source = "git@github.com:padok-team/terraform-azurerm-subnet.git?ref=v0.0.1"
+
+  name             = "my-subnet"
+  address_prefixes = ["10.0.0.0/24"]
+
+  resource_group_name  = "my-resource-group-name"
+  virtual_network_name = "my-virtual-network-name"
+}
+```
+
 ## Example
 
 - [Example](example/main.tf)
