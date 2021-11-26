@@ -4,5 +4,8 @@
         "version": "standard-version --no-verify",
         "dry-run": "standard-version --dry-run --no-verify"
     },
-    "version": "0.0.1"
+    "version": "0.0.2",
+    "dependencies": {
+        "standard-version": "^9.3.2"
+    }
 }
