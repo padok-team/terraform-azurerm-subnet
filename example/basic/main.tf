@@ -36,7 +36,7 @@ module "resource_group" {
 }
 
 module "azurerm_subnet" {
-  source = "./.."
+  source = "./../.."
 
   name             = "subnet-${local.name}"
   address_prefixes = ["10.0.0.0/24"]
