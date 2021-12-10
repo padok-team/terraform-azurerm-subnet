@@ -3,7 +3,7 @@ resource "azurerm_subnet" "this" {
   address_prefixes = var.address_prefixes
 
   dynamic "delegation" {
-    for_each = var.delegation != null ? var.delegation : []
+    for_each = var.delegations != null ? var.delegations : []
     content {
       name = delegation.value.name
       service_delegation {

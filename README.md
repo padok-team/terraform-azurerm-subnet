@@ -5,6 +5,7 @@ Terraform module which creates **subnet** resources on **Azurerm**.
 ## User Stories for this module
 
 - AAPOS I can create a subnet in a virtual network.
+- AAPOS I can create a subnet with delegations in a virtual network
 
 ## Usage
 
@@ -20,9 +21,10 @@ module "azurerm_subnet" {
 }
 ```
 
-## Example
+## Examples
 
-- [Example](example/main.tf)
+- [Example basic subnet](example/basic/main.tf)
+- [Example subnet with delegation](example/subnet_with_delegation/main.tf)
 
 <!-- BEGIN_TF_DOCS -->
 ## Modules
@@ -37,7 +39,7 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | The name of the subnet. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the virtual network resource group. | `string` | n/a | yes |
 | <a name="input_virtual_network_name"></a> [virtual\_network\_name](#input\_virtual\_network\_name) | The name of the virtual network to which to attach the subnet. Changing this forces a new resource to be created. | `string` | n/a | yes |
-| <a name="input_delegation"></a> [delegation](#input\_delegation) | Delegation object to configure the subnet | <pre>list(object({<br>    name = string<br>    service_delegation = object({<br>      name    = string<br>      actions = list(string)<br>    })<br>  }))</pre> | `null` | no |
+| <a name="input_delegations"></a> [delegations](#input\_delegations) | Delegation object to configure the subnet | <pre>list(object({<br>    name = string<br>    service_delegation = object({<br>      name    = string<br>      actions = list(string)<br>    })<br>  }))</pre> | `null` | no |
 | <a name="input_enforce_private_link_endpoint_network_policies"></a> [enforce\_private\_link\_endpoint\_network\_policies](#input\_enforce\_private\_link\_endpoint\_network\_policies) | Enable or Disable network policies for the private link endpoint on the subnet. | `bool` | `false` | no |
 | <a name="input_enforce_private_link_service_network_policies"></a> [enforce\_private\_link\_service\_network\_policies](#input\_enforce\_private\_link\_service\_network\_policies) | Enable or Disable network policies for the private link service on the subnet. | `bool` | `false` | no |
 | <a name="input_service_endpoint_policy_ids"></a> [service\_endpoint\_policy\_ids](#input\_service\_endpoint\_policy\_ids) | The list of IDs of Service Endpoint Policies to associate with the subnet. | `list(string)` | `null` | no |
