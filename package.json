@@ -4,8 +4,13 @@
         "version": "standard-version --no-verify",
         "dry-run": "standard-version --dry-run --no-verify"
     },
-    "version": "1.0.1",
+    "version": "1.1.0",
     "dependencies": {
         "standard-version": "^9.3.2"
+    },
+    "standard-version": {
+        "skip": {
+            "tag": true
+        }
     }
 }
