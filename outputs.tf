@@ -1,4 +1,4 @@
 output "this" {
-  description = "The Subnet resource."
+  description = "The subnet resource."
   value       = azurerm_subnet.this
 }
