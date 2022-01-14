@@ -23,8 +23,8 @@ module "azurerm_subnet" {
 
 ## Examples
 
-- [Example basic subnet](example/basic/main.tf)
-- [Example subnet with delegation](example/subnet_with_delegation/main.tf)
+- [Example basic subnet](examples/basic/main.tf)
+- [Example subnet with delegation](examples/subnet_with_delegation/main.tf)
 
 <!-- BEGIN_TF_DOCS -->
 ## Modules
