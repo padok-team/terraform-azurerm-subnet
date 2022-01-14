@@ -20,7 +20,7 @@ locals {
 }
 
 module "virtual_network" {
-  source = "git@github.com:padok-team/terraform-azurerm-virtual-network.git?ref=v0.0.1"
+  source = "git@github.com:padok-team/terraform-azurerm-virtual-network.git?ref=v1.0.0"
 
   name                = "vnet-${local.name}"
   resource_group_name = module.resource_group.this.name
@@ -30,7 +30,7 @@ module "virtual_network" {
 }
 
 module "resource_group" {
-  source   = "git@github.com:padok-team/terraform-azurerm-resource-group.git?ref=v0.0.2"
+  source   = "git@github.com:padok-team/terraform-azurerm-resource-group.git?ref=v1.0.0"
   name     = "example-resources"
   location = "West Europe"
 }
