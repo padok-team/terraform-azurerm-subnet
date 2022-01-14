@@ -11,7 +11,7 @@ Terraform module which creates **subnet** resources on **Azurerm**.
 
 ```hcl
 module "azurerm_subnet" {
-  source = "git@github.com:padok-team/terraform-azurerm-subnet.git?ref=v0.0.1"
+  source = "git@github.com:padok-team/terraform-azurerm-subnet.git?ref=1.0.0"
 
   name             = "my-subnet"
   address_prefixes = ["10.0.0.0/24"]
