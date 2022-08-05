@@ -1,0 +1,8 @@
+---
+site_name: terraform-azurerm-subnet
+
+repo_name: padok-team/terraform-azurerm-subnet
+repo_url: https://github.com/padok-team/terraform-azurerm-subnet
+
+plugins:
+  - techdocs-core
