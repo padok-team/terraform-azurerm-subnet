@@ -6,6 +6,6 @@
     },
     "version": "0.1.0",
     "dependencies": {
-        "standard-version": "^9.3.2"
+        "standard-version": "9.5.0"
     }
 }
