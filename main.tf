@@ -13,7 +13,7 @@ resource "azurerm_subnet" "this" {
     }
   }
 
-  # One of them
+  # Only one of the two options below can be set
   enforce_private_link_endpoint_network_policies = var.enforce_private_link_endpoint_network_policies != null ? var.enforce_private_link_endpoint_network_policies : null
   enforce_private_link_service_network_policies  = var.enforce_private_link_endpoint_network_policies != null ? null : var.enforce_private_link_service_network_policies
 
